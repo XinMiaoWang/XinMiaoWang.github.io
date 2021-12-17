@@ -1,0 +1,91 @@
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    background-color: #22a6b3;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 60px;
+}
+
+.container h1 {
+    color: white;
+    padding-top: 10px;
+}
+
+.container form {
+    padding: 0 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container input[type="text"] {
+    flex: 3;
+    margin-right: 10px;
+    padding-left: 5px;
+    height: 30px;
+    font-size: 18px;
+}
+
+.container input[type="submit"] {
+    flex: 1;
+    background-color: white;
+    font-weight: 900;
+    height: 30px;
+    font-size: 18px;
+}
+
+.container input {
+    height: 25px;
+    border-radius: 3px;
+    border-width: 0;    /* 邊框寬度，0為無邊框 */
+    color: #535c68;
+    margin-top: 20px;
+}
+
+/* Display wishes area */
+.container ul, .container li {
+    padding: 0 35px;
+}
+
+.container ul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container li {
+    background-color: white;
+    padding: 2px 0 2px 0;
+    color: #535c68;
+    position: relative;
+}
+
+/* 從最後一個子元素開始計算，改變位置為2n倍數的元素 */
+.container li:nth-last-of-type(2n) {
+    background: #7ed6df;
+    color: white;
+  }
+
+  .container li span {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 25px;
+      color: white;
+      background-color: #ff7979;
+      cursor: pointer;  /* 改變鼠標造型 */
+  }
